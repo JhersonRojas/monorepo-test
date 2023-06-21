@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-test",
+  "version": "1.2.0",
+  "description": "monorepo para la union de cliente y servidor con javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev --no-daemon",
+    "build": "turbo build --no-daemon",
+    "test": "turbo test --no-daemon",
+    "production": "turbo production --no-daemon"
+  },
+  "keywords": [],
+  "author": "Anonimo",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.3"
+  }
+}
